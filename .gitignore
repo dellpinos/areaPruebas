@@ -1,0 +1,6 @@
+#dev library
+node_modules
+package.json
+
+#Multimedia
+/img
