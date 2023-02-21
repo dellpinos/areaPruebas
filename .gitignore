@@ -1,6 +1,11 @@
 #dev library
 node_modules
 package.json
+package-lock.json
 
 #Multimedia
 /img
+
+#vsCode
+.vsCode
+
