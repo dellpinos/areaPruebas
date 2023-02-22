@@ -1,0 +1,20 @@
+sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80rem;
+    background-color: grey;
+
+    a {
+        font-size: 2rem;
+    }
+}
+.entrada__sidebar {
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 0 0;
+
+    p {
+        margin: 0 0;
+    }
+}
+

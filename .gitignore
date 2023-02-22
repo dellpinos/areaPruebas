@@ -9,3 +9,5 @@ package-lock.json
 #vsCode
 .vsCode
 
+#notas
+notas.md

@@ -24,8 +24,6 @@ p{
 a {
     text-decoration: none;
 }
-
-
 h1 {
     font-size: 4rem;
 }
@@ -41,4 +39,8 @@ img {
     display: block;
     width: 100%;
     height: auto;
+}
+.contenedor__grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
