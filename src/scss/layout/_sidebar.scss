@@ -1,11 +1,16 @@
+@use 'base/variables' as v;
 sidebar {
     display: inline;
     height: 80rem;
-    background-color: black;
-    color: white;
+    background-color: v.$negro;
+    color: v.$blanco;
+
     a {
         font-size: 2rem;
-        color: white;
+        color: v.$blanco;
+        &:hover {
+            color: v.$rojo;
+        }
     }
 }
 .entrada__sidebar {

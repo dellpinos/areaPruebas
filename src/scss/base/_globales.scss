@@ -9,18 +9,13 @@ html {
 *:after { 
     box-sizing: inherit; // snippet de paul irish, el padding no va a ser un problema
 }
-
+body {
+    font-family: v.$fuentePrincipal;
+}
 p{
     font-size: 2rem;
     line-height: 1.5em;   // si no utilizo una unidad de medida, por defecto son em
 }
-
-.contenedor {
-    width: 95%; //para q el contenedor no llegue a los bordes
-    max-width: 130rem; // dimension del contenedor
-    margin: 0 auto; //centra el contenedor
-}
-
 a {
     text-decoration: none;
     color: v.$negro;
@@ -41,6 +36,13 @@ img {
     width: 100%;
     height: auto;
 }
+
+.contenedor {
+    width: 100%;
+    margin: 0 0;
+}
+
+
 .contenedor__grid {
     display: grid;
     grid-template-columns: 3fr 1fr;

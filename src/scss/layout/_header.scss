@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
 
-    background: rgb(198,2,7);
-background: linear-gradient(180deg, rgba(198,2,7,0.9374343487394958) 45%, rgba(210,62,1,0.9206276260504201) 100%);
+    background: rgb(198, 2, 7);
+    background: linear-gradient(180deg, rgba(198, 2, 7, 0.9374343487394958) 45%, rgba(210, 62, 1, 0.9206276260504201) 100%);
     padding: 1rem;
 
     border-bottom: 2px solid black;
@@ -20,7 +20,6 @@ background: linear-gradient(180deg, rgba(198,2,7,0.9374343487394958) 45%, rgba(2
     h1 {
         font-size: 5.5rem;
     }
-
     .navegacion {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -31,11 +30,13 @@ background: linear-gradient(180deg, rgba(198,2,7,0.9374343487394958) 45%, rgba(2
             margin: 0 .8rem 0 0;
             color: black;
             padding: 2rem;
-            &:hover {
-                box-shadow: inset -2px -2px 15px  rgba(255, 255, 255, 0.8);
 
+            &:hover {
+                box-shadow: inset -2px -2px 15px rgba(255, 10, 10, 0.9),
+                -5px -5px 10px rgba(0, 0, 0, 0.3);
             }
         }
+
         :last-child {
             margin: 0;
         }

@@ -1,5 +1,15 @@
 @use 'base/variables' as v;
 
-.contenedor__footer {
+footer {
+    color: v.$blanco;
+    display: flex;
     background-color: v.$negro;
+    justify-content: space-between;
+    
+    a {
+        color: v.$blanco;
+    }
+}
+.contenedor__footer {
+    
 }
