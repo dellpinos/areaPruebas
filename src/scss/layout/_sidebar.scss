@@ -1,17 +1,18 @@
 sidebar {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: inline;
     height: 80rem;
-    background-color: grey;
-
+    background-color: black;
+    color: white;
     a {
         font-size: 2rem;
+        color: white;
     }
 }
 .entrada__sidebar {
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     padding: 1rem;
     margin: 0 0;
+    text-align: center;
 
     p {
         margin: 0 0;
