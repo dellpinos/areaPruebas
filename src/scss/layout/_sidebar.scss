@@ -2,25 +2,26 @@
 sidebar {
     display: inline;
     height: 80rem;
-    background-color: v.$negro;
+    background-color: v.$azul;
     color: v.$blanco;
 
     a {
         font-size: 2rem;
         color: v.$blanco;
         &:hover {
-            color: v.$rojo;
+            color: v.$verdeOscuro;
         }
     }
 }
 .entrada__sidebar {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid v.$negro;
     padding: 1rem;
     margin: 0 0;
     text-align: center;
 
     p {
         margin: 0 0;
+        color: v.$blanco;
     }
 }
 

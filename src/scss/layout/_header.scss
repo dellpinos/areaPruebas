@@ -1,49 +1,96 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
 .header {
     display: flex;
     justify-content: space-between;
-
-    background: rgb(198, 2, 7);
-    background: linear-gradient(180deg, rgba(198, 2, 7, 0.9374343487394958) 45%, rgba(210, 62, 1, 0.9206276260504201) 100%);
+    background-color: v.$blanco;
     padding: 1rem;
-
-    border-bottom: 2px solid black;
-    box-shadow: inset 0px -10px 5px rgba(0, 0, 0, 0.3);
-
+    border-bottom: 2px solid v.$verdeOscuro;
+    box-shadow: inset 0px -8px 8px rgba(100, 100, 100, 0.2);
     :last-child {
         align-items: center;
     }
 
-    :first-child {
-        align-items: end;
-    }
 
     h1 {
-        font-size: 5.5rem;
+        font-size: 2.5rem;
+        color: v.$azul;
     }
     .navegacion {
+        font-size: 1rem;
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        font-size: 2rem;
         text-align: center;
-
         a {
             margin: 0 .8rem 0 0;
             color: black;
             padding: 2rem;
-
+            border-radius: 5%;
             &:hover {
-                box-shadow: inset -2px -2px 15px rgba(255, 10, 10, 0.9),
-                -5px -5px 10px rgba(0, 0, 0, 0.3);
+                box-shadow: inset -2px -2px 10px 10px rgba(0, 178, 137, 0.7);
             }
         }
-
         :last-child {
             margin: 0;
         }
     }
-
     .logotipo {
         display: flex;
+        align-items: flex-end;
         padding: 2rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+        
+        
+    }
+}
+@include m.tablet {
+    .header {
+        h1 {
+            font-size: 3rem;
+        }
+        .navegacion {
+            font-size: 1.5rem;
+        }
+        .logotipo {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@include m.desktop {
+    .header {
+        h1 {
+            font-size: 4.5rem;
+        }
+        .navegacion {
+            font-size: 2rem;
+        }
+        .logotipo {
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+@include m.desktopXL {
+    .header {
+        h1 {
+            font-size: 5.5rem;
+        }
+        .navegacion {
+            font-size: 2rem;
+        }
+        .logotipo {
+            h2 {
+                font-size: 4rem;
+            }
+        }
+        
     }
 }

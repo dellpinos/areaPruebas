@@ -1,15 +1,38 @@
 @use 'base/variables' as v;
 
-footer {
+.contenedor__footer {
     color: v.$blanco;
     display: flex;
     background-color: v.$negro;
     justify-content: space-between;
+    div {
+        padding: 3rem;
+        display: flex;
+        align-items: flex-end;
+    }
+    nav {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-right: 5rem;
+    }
     
     a {
         color: v.$blanco;
+        &:hover {
+            color: v.$verdeOscuro;
+        }
+        border-right: 1px solid v.$blanco;
+        padding: 1rem;
     }
 }
-.contenedor__footer {
+footer {
+    p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 1rem;
+        
+    }
     
 }
