@@ -1,4 +1,5 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 sidebar {
     display: inline;
     height: 80rem;
@@ -6,7 +7,7 @@ sidebar {
     color: v.$blanco;
 
     a {
-        font-size: 2rem;
+        font-size: 1rem;
         color: v.$blanco;
         &:hover {
             color: v.$verdeOscuro;
@@ -22,6 +23,19 @@ sidebar {
     p {
         margin: 0 0;
         color: v.$blanco;
+        font-size: 1rem;
+    }
+}
+@include m.tablet {
+    sidebar {
+        a{
+            font-size: 2rem;
+        }
+    }
+    .entrada__sidebar {
+        p {
+            font-size: 2rem;
+        }
     }
 }
 
