@@ -1,2 +1,2 @@
-console.log("Probanding...");
+function main(){wordFlip()}function wordFlip(){const o=document.querySelector("#inputWordFlip");document.querySelector("#botonFormulario").addEventListener("submit",(function(){o=o.textContent,console.log(o),function(o){console.log(o);let n=o.split(" "),t=0;for(;t<n.length;){if(Math.floor(100*Math.random())%2==0){console.log(n[t]);let o=n[t].split(""),e=0,l=[];for(;e<=o.length;)l[e]=o[o.length-e],e++;n[t]=l.join("")}t++}console.log(n.join(" "))}(o)}))}main();
 //# sourceMappingURL=app.js.map
