@@ -5,15 +5,33 @@ function main() {
 
 function wordFlip() {
 
-    const stringIngresado = document.querySelector('#inputWordFlip');
-    const botonFormulario = document.querySelector('#botonFormulario');
+    // const stringIngresado = document.querySelector('#inputWordFlip').value;
+    // const botonFormulario = document.querySelector('#botonFormulario');
+
+    // botonFormulario.addEventListener('click', function () {
+    //     stringIngresado = stringIngresado;
+    //     console.log(stringIngresado + 'lala');
+    //     invertirPalabra(stringIngresado);
+        
+    // });
+    const formulario = document.querySelector('.formularioWF');
+    const texto = document.querySelector('#inputWordFlip');
+    const resultado = document.querySelector('#resultadoWF');
 
 
-    botonFormulario.addEventListener('submit', function () {
-        stringIngresado = stringIngresado.textContent;
-        console.log(stringIngresado);
+    // texto.addEventListener('input', leerTexto);
+
+    formulario.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const stringIngresado = texto.value;
         invertirPalabra(stringIngresado);
-    })
+        
+
+    });
+    
+    
+
+
 
 
     function invertirPalabra(string) {
@@ -43,6 +61,8 @@ function wordFlip() {
         }
 
         console.log(array.join(' '));
+        resultado.textContent = array.join(' ');
+        resultado.textContent = array.join(' ');
     }
 
 
