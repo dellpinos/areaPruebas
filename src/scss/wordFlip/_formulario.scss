@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+
+.wordFlip {
+    h2 {
+        font-size: 5rem;
+        padding: 3rem 0 3rem 0;
+        text-align: center;
+        
+    }
+    .formularioWF {
+        fieldset {
+            display: block;
+            border: none;
+        }
+        legend, label {
+            font-size: 2rem;
+            
+            
+        }
+        input {
+            font-size: 1.5rem;
+            width: 70%;
+            height: 4rem;
+            margin: 2rem;
+
+        }
+        button {
+            width: 8rem;
+            height: 4rem;
+            margin-bottom: 5rem;
+            
+        }
+        
+    }
+}
