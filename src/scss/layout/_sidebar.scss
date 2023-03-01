@@ -2,39 +2,40 @@
 @use 'base/mixins' as m;
 sidebar {
     display: inline;
-    height: 80rem;
+    
     background-color: v.$azul;
     color: v.$blanco;
 
-    a {
-        font-size: 1rem;
-        color: v.$blanco;
-        &:hover {
-            color: v.$verdeOscuro;
-        }
-    }
+    
 }
 .entrada__sidebar {
     border-bottom: 1px solid v.$negro;
     padding: 1rem;
     margin: 0 0;
-    text-align: center;
-
+    text-align: end;
+    a {
+        font-size: 1.2rem;
+        color: v.$blanco;
+        &:hover {
+            color: v.$verdeOscuro;
+        }
+    }
     p {
+        text-align: start;
         margin: 0 0;
         color: v.$blanco;
         font-size: 1rem;
     }
 }
 @include m.tablet {
-    sidebar {
-        a{
-            font-size: 2rem;
-        }
-    }
+
     .entrada__sidebar {
         p {
-            font-size: 2rem;
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+        }
+        a{
+            font-size: 1.5rem;
         }
     }
 }

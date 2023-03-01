@@ -1,35 +1,41 @@
 @use 'base/variables' as v;
 
 .wordFlip {
+    margin: 3rem 3rem 0 3rem;
     h2 {
         font-size: 5rem;
         padding: 3rem 0 3rem 0;
         text-align: center;
-        
     }
     .formularioWF {
+
         fieldset {
             display: block;
             border: none;
+            
         }
         legend, label {
             font-size: 2rem;
+            line-height: 3rem;
+            margin-bottom: 2rem;
             
             
         }
         input {
+            display: block;
+            text-align: center;
             font-size: 1.5rem;
-            width: 70%;
-            height: 4rem;
-            margin: 2rem;
+            width: 95%;
+            height: 5rem;
+            margin: 0 auto;
 
         }
-        button {
-            width: 8rem;
-            height: 4rem;
-            margin-bottom: 5rem;
-            
-        }
         
+    }
+    #resultadoWF {
+        border-top: 1px solid v.$grisOscuro;
+        padding-top: 1rem;
+        text-align: center;
+        color: v.$verdeOscuro;
     }
 }
