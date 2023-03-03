@@ -26,6 +26,16 @@
     grid-template-columns: repeat($columns, 1fr);
     gap: $espaciado;
 }
+@mixin boton($bgColor, $tColor, $espaciado, $display) { // probar este mixin
+    background-color: $bgColor;
+    color: $tColor;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: $espaciado;
+    display: $display; // el argumento no lleva comillas ni nada, solo el valor
+}
 @mixin resetear-Lista{
     margin: 0;
     padding: 0;
