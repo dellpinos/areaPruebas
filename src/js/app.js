@@ -1,50 +1,36 @@
-function main() {
-    wordFlip();
-}
+function solution(str){
 
-function wordFlip() {
-    const botonFormulario = document.querySelector('#botonFormulario');
-    const formulario = document.querySelector('.formularioWF');
-    const texto = document.querySelector('#inputWordFlip');
-    const resultado = document.querySelector('#resultadoWF');
+    let array = str.split('');
+    let array2 = [];
+    let indice = array.length;
+    let indice2 = 0;
 
-    botonFormulario.addEventListener('click', function(){
-        const stringIngresado = texto.value;
-        invertirPalabra(stringIngresado);
-    });
-
-    formulario.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const stringIngresado = texto.value;
-        invertirPalabra(stringIngresado);
-    });
-    
-    function invertirPalabra(string) {
-
-//        console.log(string);
-
-        let array = string.split(' '); //separa por palabras
-        let acu = 0;
-        while (acu < array.length) {
-            let randomNumber = Math.floor(Math.random() * 100); //random number
-            if (randomNumber % 2 === 0) { // palabra elegida
-//                console.log(array[acu]);
-                let arrayDos = array[acu].split('');  // contiene cada letra de la palabra
-                let acu2 = 0;
-                let valorUno = [];
-
-                while (acu2 <= arrayDos.length) {
-                    valorUno[acu2] = arrayDos[arrayDos.length - acu2];
-                    acu2++;
-                }
-                array[acu] = valorUno.join('');
-            }
-            acu++;
-
-        }
-//        console.log(array.join(' '));
-        resultado.textContent = array.join(' ');
+    for(let i=0; i <= indice; i += 2) {
+      if(array[i] === undefined){
+        array[i] = '_';
+      };
+      if(array[i+1] === undefined){
+        array[i+1] = '_';
+      };
     }
-}
 
-main();
+    for(let i=0; i < indice; i += 2) {
+       array2[indice2] = array[i] + array[i+1];
+       indice2++;
+    }
+    return array2;
+}
+let respuesta = solution('sdasdas');
+console.log(respuesta);
+
+
+
+
+// let variable = 'sdaafs';
+// let respuesta = variable.split('');
+
+
+
+
+console.log('probando');
+
