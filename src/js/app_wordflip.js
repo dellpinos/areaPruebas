@@ -22,8 +22,9 @@ function wordFlip() {
     function invertirPalabra(string) {
 
 //        console.log(string);
+        let string2 = string.replace(/[-_,\.]/g, "");
 
-        let array = string.split(' '); //separa por palabras
+        let array = string2.split(' '); //separa por palabras
         let acu = 0;
         while (acu < array.length) {
             let randomNumber = Math.floor(Math.random() * 100); //random number
@@ -43,6 +44,7 @@ function wordFlip() {
 
         }
 //        console.log(array.join(' '));
+        
         resultado.textContent = array.join(' ');
     }
 }

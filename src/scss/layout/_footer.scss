@@ -1,102 +1,21 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.contenedor__footer {
-    color: v.$blanco;
-    display: block;
-    
-    background-color: v.$negro;
-    justify-content: space-between;
-    div {
-        padding: 3rem;
-        display: flex;
-        align-items: flex-end;
-    }
-    .navegacion {
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        margin: 2rem 0 0 0;
-        a {
-            color: v.$blanco;
-            &:hover {
-                color: v.$verdeOscuro;
-            }
-            border-right: 1px solid v.$blanco;
-            padding: 1rem;
-            font-size: 1.2rem;
-        }
-    }
-    
-    
-    .logotipo {
-        display: flex;
-        align-items: flex-end;
-        padding: 0rem;
 
-        h2 {
-            font-size: 1.5rem;
-            padding: 0;
-            color: v.$blanco;
-    
-        }
-    }
-}
-footer {
+.footer__contenedor {
+
+    background-color: v.$DMgrisOscuro;
+    color: v.$blanco;
+    font-weight: 900;
+
     p {
         text-align: center;
         margin: 0 auto;
-        padding: 0.3rem;
-        font-size: 1rem;
+        padding: 1rem;
+        font-size: 2rem;
         
     }
 
 }
-@include m.tablet {
-
-    .contenedor__footer {
-        padding: 2rem;
-        display: flex;
-
-        .navegacion {
-            font-size: 1.5rem;
-            margin-right: 5rem;
-        }
-
-        .logotipo {
-            h2 {
-                font-size: 3.5rem;
-                padding: 0 0;
-            }
-        }
 
 
-    }
-    footer {
-        p {
-            text-align: center;
-            margin: 0 auto;
-            padding: 1rem;
-            font-size: 2rem;
-            
-        }
-    }
-}
-
-
-
-@include m.desktop {
-    .contenedor__footer {
-
-        .navegacion {
-            font-size: 1.6rem;
-        }
-        .logotipo {
-            h2 {
-                font-size: 3.5rem;
-            }
-        }
-    }
-
-}
