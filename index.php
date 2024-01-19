@@ -1,31 +1,15 @@
-<?php
-include 'includes/templates/header.php';
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url=otroarchivo.php">
+    <title>Redireccionando...</title>
+    <script>
+        // Refirección al index de las vistas, "router"
 
-?>
-    <div class="contenedor contenedor__grid">
+            window.location.href = 'views/index.php';
 
+    </script>
+</head>
 
-        <main class="inicio__contenedor">
-            <div class="inicio__contenedor-heading">
-                <h1 id="inicio-hora">&lt/ Ideas? ></h1>
-
-                <div class="inicio__contenedor-fechas">
-                    <p id="inicio-unix"></p>
-                    <p id="inicio-fecha"></p>
-
-                </div>
-                <p class="inicio__nacimiento">Desde 16/11/87 han pasado <span id="inicio-dias-nacimiento"></span> dias, esto son <span id="inicio-years-nacimiento"></span> años.</p>
-
-            </div>
-        </main>
-
-
-        
-
-<?php include 'includes/templates/sidebar.php'; ?>
-
-    </div>
-
-<?php
-
-include 'includes/templates/footer.php';
+</html>

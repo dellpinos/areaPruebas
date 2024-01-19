@@ -54,6 +54,6 @@ img {
 @include m.tablet {
     .contenedor__grid {
         grid-template-columns: 5fr 1fr;
-        height: 100rem;
+        min-height: 100rem;
     }
 }

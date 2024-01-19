@@ -1,5 +1,5 @@
 <?php
-include 'includes/templates/header.php';
+include '../includes/templates/header.php';
 
 ?>
     <div class="contenedor contenedor__grid">
@@ -27,12 +27,13 @@ include 'includes/templates/header.php';
         </main>
         <!-- Fin Area de Pruebas-->
 
-        <?php include 'includes/templates/sidebar.php'; ?>
+        <?php include '../includes/templates/sidebar.php'; ?>
         
     </div>
 
- <script src="build/js/app_toCamel.js"></script>
+    <!-- // no puedo conectar el js -->
+ <script src="../build/js/app_toCamel.js"></script>
 
 
     <?php
-include 'includes/templates/footer.php';
+include '../includes/templates/footer.php';
